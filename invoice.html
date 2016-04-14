@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>INVOICE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/invoice.css" media="all">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+	<div class='container'>
+		<div align="center"><h3><strong>INVOICE</strong></h3></div>
+		<div class="row">
+			<div class="col-md-2 pull-left"><h4><strong>KRISH PHARMA</strong></h4></div>
+			<div class="col-md-2 pull-right" id="logo"><img src="images/krish-logo.jpg"/></div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 pull-left">#3,MNV Complex,<br>
+			Beside Krish Green House and Krish Clinic,<br>
+			Opposite to Manunatha Palace,<br>
+			Thanisandra Main Road,<br>
+			Dr.SRK Post, Bangalore 560077</div>
+			
+			<div class="col-md-4 pull-right"><br>
+			<span class="glyphicon glyphicon-envelope"></span>&nbsp gekgroup.krishpharma@gmail.com<br>
+			<span class="glyphicon glyphicon-earphone"></span>&nbsp 9686550123, 9739865868<br>
+			&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp (Murli C Gowda)
+			</div>
+		</div>
+		<hr id="division">
+		<div class="row">
+			<div class="col-md-6" id="invoiceNumber">Invoice#</div>
+			<div class="col-md-4 pull-right" id="date">Date:</div>
+		</div>	
+	</div>
+	
+	<div class="container">
+        <table class="table table-bordered table-condensed">
+			<tbody>
+				<tr>
+					<td id='patientName'>Patient_Name:</td>
+					<td id='contactNo'>Contact_No.:</td>
+				</tr>
+				<tr>
+					<td id='age'>Age:</td>
+					<td id='consultant'>Consultant:</td>
+				</tr>
+				<tr>
+					<td id='gender'>Gender:</td>
+					<td id='hospital'>Hospital:</td>
+				</tr>
+				<tr>
+					<td id='address'>Address:</td>
+					<td id='problemTypes'>Problem_types:</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<div class="container">
+        <table class="table table-bordered table-condensed" id="purchase">
+			<thead>
+				<tr>
+					<th>SNo</th>
+					<th>Description</th>
+					<th>Batch No</th>
+					<th>Quantity</th>
+					<th>Price</th>
+					<th>Total Price</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+	
+	<div class="container">
+		<ul class="list-inline">
+			<li>No. of items:<span class='label label-default' id='items'>&nbsp javascript</span></li>
+			<li>Total Price:<span class='label label-default' id='total'>&nbsp html</span></li>
+			<li>You Saved:<span class='label label-default' id='saved'>&nbsp css</span></li>
+			<li>Please Pay:<span class='label label-default' id='pay'>&nbsp bootstrap</span></li>
+		</ul>
+		<hr id="divisionBottom">
+	</div>
+	
+	<div class="container">
+		<p>Thank you for choosing Krish Pharma.<br>
+		Doctors avaliable for Gynec,Psychiatric and General physician at KRISH CLINIC<br>
+		Please call us for FREE BLOOD TEST sample collection at your door steps. We are tied with Thyrocare  diagnostics and Medcis Pathlabs INDIA Pvt Ltd<br>
+		10% discount on monthly medicines**<br>
+		Please carry the prescriptions  to avail medicines. &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp We are on GOODBOX App. Avaliable in  Google Play store
+		</p>
+	</div>
+</body>
+<script src="js/invoice.js"></script>
+</html>	

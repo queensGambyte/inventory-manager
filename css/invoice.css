@@ -1,0 +1,22 @@
+body{
+	font-size: 12px;
+	
+}
+
+#division{
+	margin-bottom: 50px;
+	border: 2px solid black;
+}
+
+#divisionBottom{
+	margin-bottom: 10px;
+	border: 2px solid black;
+}
+
+.label{
+	font-size: 14px;
+}
+
+#logo{
+	margin-right: 100px;
+}
