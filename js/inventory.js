@@ -134,10 +134,10 @@ $(function() {
 				var discount= prompt("Enter a discount%");
 				controller.saveDiscount(discount);
 				controller.generateAndSaveInvoiceNo();
-				localStorage.modelTemp=JSON.stringify(modelTemp);
+				controller.saveModels();
 				controller.emptyPatientInfo();
 				controller.emptyPurchaseInfo();
-				inventoryView.renderTable();
+				//inventoryView.renderTable();
 				window.open("invoice.html");
 			});
 			$("#billingView").hide();
@@ -466,6 +466,11 @@ $(function() {
 			var target= controller.getStock();
 			console.log(target);
 			modelPerm.stock[target]-= parseInt($("#quantity").prop("value"));
+		},
+		
+		saveModels: function() {
+			localStorage.modelTemp=JSON.stringify(modelTemp);
+			localStorage.modelPerm= JSON.stringify(modelPerm);
 		},
 		
 		addBillingData: function() {
